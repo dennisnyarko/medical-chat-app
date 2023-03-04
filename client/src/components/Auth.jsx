@@ -43,10 +43,10 @@ const Auth = () => {
         if(isSignup) {
         cookies.set('phoneNumber', phoneNumber);
         cookies.set('avatarURL', avatarURL);
-        cookies.set('hashedPassword', hashedPassword);
-        
-            
+        cookies.set('hashedPassword', hashedPassword);    
         }
+
+        window.location.reload();
     }
 
     const switchMode = async () => {
